@@ -1,0 +1,6 @@
+pantheon_agcdn_management.agcdn_settings_form:
+  title: 'AGCDN Management'
+  route_name: pantheon_agcdn_management.agcdn_settings_form
+  description: 'Manage AGCDN configurations'
+  parent: system.admin_config_system
+  weight: 99

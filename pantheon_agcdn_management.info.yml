@@ -1,0 +1,5 @@
+name: 'AGCDN Management'
+type: module
+description: 'Manage AGCDN configurations'
+core: 8.x
+package: 'Pantheon'

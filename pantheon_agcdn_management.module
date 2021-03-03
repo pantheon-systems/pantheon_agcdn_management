@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains pantheon_agcdn_management.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pantheon_agcdn_management_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pantheon_agcdn_management module.
+    case 'help.page.pantheon_agcdn_management':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage AGCDN configurations') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pantheon_agcdn_management_theme($existing, $type, $theme, $path) {
+  return [
+    'page__admin__config__pantheon_agcdn_management__settings' => [
+      'template' => 'page--admin--config--pantheon-agcdn-management--settings',
+      'base hook' => 'page',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function pantheon_agcdn_management_page_attachments(&$attachments) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'pantheon_agcdn_management.agcdn_settings_form') {
+    $attachments['#attached']['drupalSettings']['pantheon_agcdn_management']['api_key'] = \Drupal::config('pantheon_agcdn_management.settings')->get('api_key');
+    $attachments['#attached']['library'][] = 'pantheon_agcdn_management/admin_app';
+  }
+}

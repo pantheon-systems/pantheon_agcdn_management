@@ -1,0 +1,12 @@
+{
+    "name": "pantheon-systems/pantheon_agcdn_management",
+    "type": "drupal-module",
+    "description": "Manage AGCDN configurations",
+    "keywords": [],
+    "homepage": "https://www.drupal.org/project/pantheon_agcdn_management",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/pantheon_agcdn_management",
+        "source": "http://cgit.drupalcode.org/pantheon_agcdn_management"
+    }
+}
