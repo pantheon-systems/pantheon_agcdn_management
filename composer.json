@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-systems/pantheon_agcdn_management",
+    "name": "drupal/pantheon_agcdn_management",
     "type": "drupal-module",
     "description": "Manage AGCDN configurations",
     "keywords": [],
