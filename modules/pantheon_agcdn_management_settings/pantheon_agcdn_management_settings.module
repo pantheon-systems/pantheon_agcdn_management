@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains pantheon_agcdn_management_settings.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pantheon_agcdn_management_settings_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pantheon_agcdn_management module.
+    case 'help.page.pantheon_agcdn_management_settings':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Manage only the AGCDN settings dictionary') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function pantheon_agcdn_management_settings_page_attachments(&$attachments) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  if ($route_name === 'pantheon_agcdn_management.agcdn_settings_form') {
+    // Pass 'settings' submodule context to vue app.
+    $attachments['#attached']['drupalSettings']['pantheon_agcdn_management']['submodule'] = 'settings';
+  }
+}

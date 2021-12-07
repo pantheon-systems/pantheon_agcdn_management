@@ -6,7 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class AgcdnSettingsForm.
+ * Configuration form for AGCDN Settings.
  */
 class AgcdnSettingsForm extends ConfigFormBase {
 
