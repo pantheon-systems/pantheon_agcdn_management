@@ -5,7 +5,7 @@ vue:
 
 admin_app:
   js:
-    https://cdn.jsdelivr.net/gh/backlineint/vue-agcdn-mgmt@0c627821524000c0235766a4f5d99a0d7cd47116/dist/main.js: { type: external, minified: true }
+    https://cdn.jsdelivr.net/gh/pantheon-systems/vue-agcdn-mgmt@v0.9.6/dist/main.js: { type: external, minified: true }
   dependencies:
     - core/drupal
     - core/drupalSettings
