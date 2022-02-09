@@ -1,7 +1,7 @@
 vue:
   version: 2.6.12
   js:
-    https://vuejs.org/js/vue.js: { type: external, minified: false }
+    https://cdn.jsdelivr.net/npm/vue@2.6.12: { type: external, minified: false }
 
 admin_app:
   js:
