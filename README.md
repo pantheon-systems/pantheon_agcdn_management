@@ -1,6 +1,6 @@
 # Pantheon AGCDN Management
 
-[![Actively Maintained](https://img.shields.io/badge/Pantheon-Actively_Maintained-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#actively-maintained)
+[![Minimal Support](https://img.shields.io/badge/Pantheon-Minimal_support-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#minimal-support)
 
 Enables self service management of specific AGCDN settings.
 
