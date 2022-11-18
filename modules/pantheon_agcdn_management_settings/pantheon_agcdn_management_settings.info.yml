@@ -2,7 +2,7 @@ name: 'AGCDN Management Settings'
 type: module
 description: 'Manage only the AGCDN settings dictionary'
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Pantheon'
 dependencies:
   - pantheon_agcdn_management:pantheon_agcdn_management
