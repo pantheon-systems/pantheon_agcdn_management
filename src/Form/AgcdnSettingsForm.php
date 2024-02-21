@@ -38,6 +38,13 @@ class AgcdnSettingsForm extends ConfigFormBase {
       '#maxlength' => 64,
       '#size' => 64,
       '#default_value' => $config->get('api_key'),
+      '#attributes' => ['id' => 'api-key-field'], // Add ID attribute to the textfield
+    ];
+    $form['api_key_label'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'label',
+      '#attributes' => ['for' => 'api-key-field'], // Use ID attribute of the textfield
+      '#value' => $this->t('API Key'), // Label text
     ];
     return parent::buildForm($form, $form_state);
   }
